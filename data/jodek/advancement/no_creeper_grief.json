@@ -1,7 +1,7 @@
 {
   "display": {
       "icon": {
-          "item": "minecraft:creeper_head"
+          "id": "minecraft:creeper_head"
       },
       "title": "No Creeper Grief",
       "description": "Disables that creeper can destroy blocks",
@@ -9,7 +9,7 @@
       "show_toast": false,
       "announce_to_chat": false
   },
-  "parent": "jodek:root",
+  "parent": "jodek:mobs",
   "criteria": {
       "tick": {
           "trigger": "minecraft:tick"
