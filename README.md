@@ -2,10 +2,6 @@
 
 **Creeper no longer destroy blocks**
 
-but also
-
-**Creeper no longer do any damage**
-
 ---
 
 ## Datapack created by Jodek published on modrinth: https://modrinth.com/user/Jodek
