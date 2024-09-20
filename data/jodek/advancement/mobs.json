@@ -1,18 +1,32 @@
 {
-    "display": {
+  "display": {
       "icon": {
-        "id": "minecraft:creeper_head"
+          "id": "minecraft:skeleton_skull"
       },
-      "title": "Mobs",
-      "description": "modrinth.com/collection/7IrgVqoQ",
+      "title": "Mobs                                                                         ",
+      "description": [
+        "",
+        {
+            "text": "Mobs collection of my datapacks\n",
+            "color": "white"
+        },
+        {
+          "text": "\n",
+          "color": "white"
+        },
+        {
+            "text": "modrinth.com/collection/7IrgVqoQ",
+            "color": "dark_purple"
+        }
+    ],
       "frame": "goal",
       "show_toast": false,
       "announce_to_chat": false
-    },
-    "parent": "jodek:root",
-    "criteria": {
+  },
+  "parent": "jodek:root",
+  "criteria": {
       "tick": {
-        "trigger": "minecraft:tick"
+          "trigger": "minecraft:tick"
       }
-    }
   }
+}

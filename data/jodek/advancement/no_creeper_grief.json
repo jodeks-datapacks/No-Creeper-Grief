@@ -2,13 +2,71 @@
   "display": {
       "icon": {
           "id": "minecraft:creeper_head"
+        },
+        "title": "No Creeper Grief                                                                        ",
+        "description": [
+          "",
+          {
+              "text": "Creeper no longer destroy blocks\n",
+              "color": "white"
+          },
+          {
+              "text": "\n",
+              "color": "yellow"
+          },
+          {
+              "text": "/trigger",
+              "color": "yellow"
+          },
+          {
+              "text": " help.nocreepergrief\n",
+              "color": "yellow"
+          },
+          {
+              "text": "for help\n",
+              "color": "white"
+          },
+          {
+              "text": "\n",
+              "color": "green"
+          },
+          {
+              "text": "Datapack version: ",
+              "color": "dark_green"
+          },
+          {
+              "text": "v.1.1.0",
+              "color": "green"
+          },
+          {
+              "text": "\n",
+              "color": "green"
+          },
+          {
+              "text": "Game version: ",
+              "color": "dark_green"
+          },
+          {
+              "text": "1.21",
+              "color": "green"
+          },
+          {
+              "text": "\n",
+              "color": "green"
+          },
+          {
+              "text": "\n",
+              "color": "green"
+          },
+          {
+              "text": "modrinth.com/datapack/no-creeper-grief",
+              "color": "dark_purple"
+          }
+      ],
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
       },
-      "title": "No Creeper Grief",
-      "description": "Disables that creeper can destroy blocks",
-      "frame": "task",
-      "show_toast": false,
-      "announce_to_chat": false
-  },
   "parent": "jodek:mobs",
   "criteria": {
       "tick": {
