@@ -1,0 +1,41 @@
+{
+  "pack": {
+		"min_format": [80,0],
+		"max_format": [999,0],
+		"pack_format": 80,
+		"supported_formats": [80,999],
+    "description": [
+      {
+        "text": "\"No Creeper Grief\" (nocreepergrief)"
+      },
+      "\n",
+      {
+        "text": "Creepers don't destroy blocks anymore",
+        "color": "#aaaaaa"
+      },
+      "\n\n",
+      {
+        "text": "Version "
+      },
+      {
+        "text": "1.2.1",
+        "color": "#55ff55"
+      },
+      {
+        "text": " for Minecraft "
+      },
+      {
+        "text": "1.21.6+",
+        "color": "#55ff55"
+      },
+      "\n",
+      {
+        "text": "by "
+      },
+      {
+        "text": "Jodek",
+        "color": "#ffff55"
+      }
+    ]
+  }
+}
