@@ -1,24 +1,42 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:skeleton_skull"
+      "id": "minecraft:zombie_head"
     },
-    "title": "Mob datapacks                      ",
+    "title": "Mobs                ",
     "description": [
       {
-        "text": "Related to mob behaviour, drops and gameplay interaction",
+        "translate": "jodek.advancement.mobs.description",
+        "fallback": "Related to mob behaviour, drops and gameplay interaction",
         "color": "white",
         "bold": false
       }
     ],
     "frame": "goal",
     "show_toast": false,
-    "announce_to_chat": false
+    "announce_to_chat": false,
+    "hidden": true
   },
   "parent": "jodek:root",
   "criteria": {
     "tick": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&no_creeper_grief_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 1
+          }
+        ]
+      }
     }
   }
 }

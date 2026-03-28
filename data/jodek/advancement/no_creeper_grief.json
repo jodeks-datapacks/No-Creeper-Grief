@@ -1,60 +1,72 @@
 {
-    "display": {
-        "icon": {
-            "id": "minecraft:creeper_head"
-        },
-        "title": "No Creeper Grief            ",
-        "description": [
-            "",
-            {
-                "text": "Creepers no longer destroy blocks\n",
-                "color": "white"
-            },
-            {
-                "text": "\n",
-                "color": "yellow"
-            },
-            {
-                "text": "Datapack version: ",
-                "color": "dark_green"
-            },
-            {
-                "text": "v1.2.1",
-                "color": "green"
-            },
-            {
-                "text": "\n",
-                "color": "green"
-            },
-            {
-                "text": "Game version: ",
-                "color": "dark_green"
-            },
-            {
-                "text": "1.21.6+",
-                "color": "green"
-            },
-            {
-                "text": "\n",
-                "color": "green"
-            },
-            {
-                "text": "\n",
-                "color": "green"
-            },
-            {
-                "text": "modrinth.com/datapack/no-creeper-grief",
-                "color": "dark_purple"
-            }
-        ],
-        "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": false
+  "display": {
+    "icon": {
+      "id": "minecraft:creeper_head"
     },
-    "parent": "jodek:mobs",
-    "criteria": {
-        "tick": {
-            "trigger": "minecraft:tick"
-        }
+    "title": "No Creeper Grief            ",
+    "description": [
+      {
+        "translate": "no_creeper_grief.description",
+        "fallback": "Creepers no longer destroy blocks\n",
+        "color": "white"
+      },
+      {
+        "text": "\n\n"
+      },
+      {
+        "translate": "jodek.datapack_version",
+        "fallback": "Datapack version: ",
+        "color": "dark_green"
+      },
+      {
+        "text": "v1.2.2",
+        "color": "green"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "translate": "jodek.game_version",
+        "fallback": "Game version: ",
+        "color": "dark_green"
+      },
+      {
+        "text": "1.21.6+",
+        "color": "green"
+      },
+      {
+        "text": "\n\n"
+      },
+      {
+        "text": "modrinth.com/datapack/no-creeper-grief",
+        "color": "dark_purple"
+      }
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "jodek:mobs",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&no_creeper_grief_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 1
+          }
+        ]
+      }
     }
+  }
 }

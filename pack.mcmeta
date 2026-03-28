@@ -1,28 +1,40 @@
 {
   "pack": {
-		"min_format": [80,0],
-		"max_format": [999,0],
-		"pack_format": 80,
-		"supported_formats": [80,999],
+    "min_format": [80, 0],
+    "max_format": [999, 0],
+    "pack_format": 80,
+    "supported_formats": [80, 999],
     "description": [
       {
-        "text": "\"No Creeper Grief\" (nocreepergrief)"
+        "text": "\"No Creeper Grief\" (no_creeper_grief)"
       },
       "\n",
       {
-        "text": "Creepers don't destroy blocks anymore",
+        "translate": "no_creeper_grief.description",
+        "fallback": "Creepers don't destroy blocks anymore",
         "color": "#aaaaaa"
       },
       "\n\n",
       {
-        "text": "Version "
+        "translate": "jodek.version",
+        "fallback": "Version"
       },
       {
-        "text": "1.2.1",
+        "text": " "
+      },
+      {
+        "text": "1.2.2",
         "color": "#55ff55"
       },
       {
-        "text": " for Minecraft "
+        "text": " "
+      },
+      {
+        "translate": "jodek.for_minecraft",
+        "fallback": "for Minecraft"
+      },
+      {
+        "text": " "
       },
       {
         "text": "1.21.6+",
@@ -30,7 +42,11 @@
       },
       "\n",
       {
-        "text": "by "
+        "translate": "jodek.by",
+        "fallback": "by"
+      },
+      {
+        "text": " "
       },
       {
         "text": "Jodek",

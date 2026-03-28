@@ -1,6 +1,6 @@
 {
   "values": [
-    "nocreepergrief:app/setup",
-    "nocreepergrief:app/load_message"
+    "no_creeper_grief:app/setup",
+    "no_creeper_grief:app/load_message"
   ]
 }
