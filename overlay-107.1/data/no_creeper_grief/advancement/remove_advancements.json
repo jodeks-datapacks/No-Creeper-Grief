@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&no_creeper_grief_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 0
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific/player": {
+                "advancements": {
+                  "jodek:no_creeper_grief": true,
+                  "jodek:root": true,
+                  "jodek:mobs": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "no_creeper_grief:remove_advancements"
+  }
+}
